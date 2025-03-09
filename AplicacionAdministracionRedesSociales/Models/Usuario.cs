@@ -7,7 +7,7 @@ namespace AplicacionAdministracionRedesSociales.Models
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Email { get; set; }
+        public string? Email { get; set; }
         public List<Publicacion> Publicaciones { get; set; } = new List<Publicacion>();
 
         public static void Registrar(RedesSocialesContext context, Usuario usuario)
